@@ -343,15 +343,6 @@ module.exports = function (grunt) {
        dist: {}
     },
 
-      html2js: {
-          options: {
-              // custom options, see below
-          },
-          main: {
-              src: ['<%= yeoman.dist %>/**/*.html'],
-              dest: '<%= yeoman.dist %>/test.js'
-          }
-      },
 
     // Test settings
     karma: {
@@ -405,8 +396,7 @@ module.exports = function (grunt) {
     'uglify',
     'rev',
     'usemin',
-    'htmlmin',
-    'html2js'
+    'htmlmin'
   ]);
 
   grunt.registerTask('default', [
